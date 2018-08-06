@@ -2,8 +2,7 @@
 
 //require and instantiate express
 var ejs = require('ejs');
-var express = require('express');
-var app = express();
+var app = require('express')();
 
 // fake posts to simulate database
 
