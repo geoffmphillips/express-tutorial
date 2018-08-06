@@ -40,7 +40,7 @@ app.set('view engine', 'ejs');
 // blog home page
 app.get('/', function(req, res) {
   //render 'home.ejs' with the list of posts
-  res.render('home', {posts: posts});
+  res.render('/home.ejs', {posts: posts});
 });
 
 //blog post
@@ -51,7 +51,7 @@ app.get('post/:id', function(req, res) {
   })[0];
 
   // render the 'post.ejs' template with the post content
-  res.render('post', {
+  res.render('/post.ejs', {
     author: post.author,
     title: post.title,
     body: post.body
